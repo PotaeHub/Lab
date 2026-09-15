@@ -48,7 +48,7 @@
 
 
  .nav-container {
-     width: min(var(--max-width), calc(100% - 50px));
+     max-width: var(--max-width);
 
      margin: auto;
 
@@ -362,17 +362,98 @@
 ================================================= */
  .hero-lesson {
      display: grid;
-     grid-template-columns: repeat(12, 1fr);
-     
+     grid-template-columns: repeat(13, 1fr);
+     grid-template-rows: 100px auto auto;
+     height: 600px;
  }
 
  .text {
-     grid-column: 7/8;
+     display: flex;
+     justify-content: center;
      text-align: center;
+     height: 100px;
+     align-items: center;
+     grid-column: 6/9;
  }
 
+ .text h1 {}
 
+ .card-container {
+     grid-column: 2/4;
+     grid-row: 2;
+     border: 1px solid black;
+     text-align: center;
 
+ }
+
+ .card-container-box2 {
+     grid-column: 5/7;
+     border: 1px solid black;
+     text-align: center;
+
+ }
+
+ .card-container-box3 {
+     grid-column: 8/10;
+
+     border: 1px solid black;
+     text-align: center;
+
+ }
+
+ .card-container-box4 {
+     grid-column: 11/13;
+
+     border: 1px solid black;
+     text-align: center;
+
+ }
+
+ .card {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     gap: 30px;
+     height: 250px;
+     padding: 30px 30px 0px 30px;
+ }
+
+ .card h1 {
+     padding: 40px;
+ }
+
+ .card-img {
+     background-color: #29231e;
+ }
+
+ .detail {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     gap: 20px;
+ }
+
+ .detail p {
+     text-align: left;
+
+ }
+
+ .btn-buy {
+     padding: 5px 30px;
+     border-radius: calc(40px - 30px);
+     border: 1px solid var(--red-dark);
+     background-color: var(--red);
+     color: var(--cream);
+ }
+
+ .btn-buy:hover {
+     padding: 5px 10px;
+     border-radius: calc(40px - 30px);
+     border: 1px solid var(--red-dark);
+     background-color: var(--brown);
+     color: var(--white);
+     box-shadow: 0px 5px 5px var(--red-dark);
+ }
 
  /* =================================================
    FOOTER
