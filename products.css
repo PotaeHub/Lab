@@ -170,36 +170,79 @@
 
 
 
-
-/* =================================================
-   MAIN PRODCUTS
-================================================= */
-
-
-.hero-container {
-    height: 221px;
-    max-width: var(--max-width);
-    margin: auto;
-}
-
 .hero-content {
-    display: block;
-
-    height: 100%;
-    align-items: center;
-    margin-top: 20px;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: min(1300px);
+    min-height: 400px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
-.title-category {
-    padding: 20px;
+.hero h1 {
     text-align: center;
 }
 
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6, 1fr));
+.hero-btnType {
+    padding: 0px 20px;
+    text-align: right;
 }
 
-.box {
-    background-color: gray;
+.btn-typeProdcuts {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.hero-card {
+    display: flex;
+    border: 1px solid black;
+    display: contents;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    padding: 30px 10px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    background: #f5f4f3;
+    backdrop-filter: blur(50px);
+    transition: transform 0.3s ease;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #65594e;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom {
+    display: block;
+    text-align: left;
+}
+
+.btn-buy {
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    color: var(--cream);
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+
+.btn-buy:hover>span {
+    font-size: 16px;
+    box-shadow: 0px 5px 10px 2px #ac2516;
+    background-color: var(--red-dark);
 }

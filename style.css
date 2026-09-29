@@ -279,7 +279,6 @@
  }
 
 
- .btn-primary,
  .btn-outline {
      display: inline-flex;
 
@@ -295,11 +294,7 @@
  }
 
 
- .btn-primary {
-     background: var(--red);
 
-     color: var(--white);
- }
 
 
  .btn-outline {
@@ -309,9 +304,7 @@
  }
 
 
- .btn-primary:hover {
-     transform: translateY(-3px);
- }
+
 
 
  .btn-outline:hover {
