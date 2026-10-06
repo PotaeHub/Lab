@@ -148,45 +148,7 @@ img {
 
 }
 
-/* สลับรูปกับรายละเอียดทุกชุดที่ 2 */
-
-.costume-content:nth-of-type(4n + 3) .costume-image {
-    grid-column: 1;
-    grid-row: auto;
-}
-
-.costume-content:nth-of-type(4n + 3) .costume-detail {
-    grid-column: 2;
-}
-
 .costume-content:nth-of-type(4n + 3) .costume-detail {
     border-bottom: 1px solid var(--cream-dark);
 }
 
-
-
-@media (max-width: 800px) {
-
-    .costume-container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .costume-image,
-    .costume-detail {
-        grid-column: 1 !important;
-    }
-
-    .costume-image {
-        min-height: auto;
-        padding: 30px 10px 10px;
-    }
-
-    .costume-image img {
-        height: 350px;
-    }
-
-    .costume-detail {
-        padding: 30px 10px 50px;
-    }
-}
