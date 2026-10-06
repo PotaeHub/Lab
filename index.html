@@ -1,11 +1,16 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>การแต่งกายพื้นเมืองของไทย</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@500;600;700&family=Sarabun:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -15,325 +20,71 @@
 </head>
 
 <body>
+    <!-- Navbar -->
 
     <header class="header-container">
+        <div class="logo">
+            <a href="#home">
+                <img src="img/logo.png" alt="logo">
+            </a>
+
+        </div>
+
         <nav class="nav-container">
 
-            <div class="logo">
-                <a href="#home">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-            </div>
+            <ul class="menu-content">
+                <li>
+                    <a href="/index.html" class="active">หน้าหลัก</a>
+                </li>
+                <li>
+                    <a href="/regions.html" class="active">ภูมิภาค</a>
+                </li>
+                <li>
+                    <a href="/costume.html" class="active">รายละเอียดชุด</a>
+                </li>
+                <li>
+                    <a href="/textiles.html" class="active">ผ้าไทยและเครื่องแต่งกาย</a>
+                </li>
+                <li>
+                    <a href="/history.html" class="active">ประวัติและวัฒนธรรม</a>
+                </li>
 
-            <div class="menu-container">
 
-                <ul class="menu">
-                    <li>
-                        <a href="/#home" class="active">หน้าหลัก</a>
-                    </li>
-
-                    <li>
-                        <a href="/#products" class="link">สินค้าทั้งหมด</a>
-                    </li>
-
-                    <li>
-                        <a href="/#payment" class="link">ชำระเงิน</a>
-                    </li>
-
-                    <li>
-                        <a href="/#textTure" class="link">แกลเลอรี่ภาพ</a>
-                    </li>
-
-                    <li>
-                        <a href="/#lesson" class="link">แหล่งเรียนรู้/บทความ</a>
-                    </li>
-                </ul>
-
-                <a href="#contact" class="nav-button">
-                    เรียนรู้เพิ่มเติม
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
+            </ul>
+            <a href="/about.html" class="nav-button">
+                เกี่ยวกับเรา
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </nav>
+
+
     </header>
 
     <main>
-
-        <section class="hero" id="home">
-
-            <div class="hero-overlay"></div>
-
+        <section>
             <div class="hero-content">
-
-                <span class="hero-tag">
-                    <i class="fa-solid fa-star"></i>
-                    มรดกทางวัฒนธรรมของไทย
-                </span>
-
-                <h1>
-                    การแต่งกาย<br>
-                    <span>พื้นเมืองของไทย ทั้ง 4 ภาค</span>
-                </h1>
-
-                <p>
-                    เรียนรู้เรื่องราวของผ้าไทย ภูมิปัญญาท้องถิ่น
-                    และเอกลักษณ์การแต่งกายของชาวไทย
-                    ที่สืบทอดจากรุ่นสู่รุ่น
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#clothing" class="btn-primary">
-                        สำรวจการแต่งกาย
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </a>
-
-                    <a href="#about" class="btn-outline">
-                        เรื่องราวของผ้าไทย
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="hero-bottom">
-
-                <div>
-                    <span>01</span>
-                    <p>วัฒนธรรม</p>
-                </div>
-
-                <div>
-                    <span>02</span>
-                    <p>ผ้าทอพื้นเมือง</p>
-                </div>
-
-                <div>
-                    <span>03</span>
-                    <p>ภูมิปัญญา</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="hero-lesson" id="lesson">
-
-            <div class="text">
-                <h1>ภาพรวมชุดทั้ง 4 ภาค</h1>
-            </div>
-
-            <div class="card-container">
-
-                <div class="card">
-
-                    <span class="text-title">ภาคเหนือ</span>
-
-                    <div class="card-img">
-                        <img src="img/northern.jpg" alt="ชุดพื้นเมืองภาคเหนือ">
-                    </div>
-
-                    <div class="product-detail">
-
-                        <span>ชุดพื้นเมืองล้านนา</span>
-
-                        <strong>฿1,290</strong>
-
-                        <div class="product-bottom">
-
-                            <a href="products.html" class="btn-buy">
-                                ซื้อเลย
-                            </a>
-
-                            <a href="products.html" class="btn-prodcut-detail">
-                                รายละเอียด
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-
-                    <span class="text-title">ภาคอีสาน</span>
-
-                    <div class="card-img">
-                        <img src="img/northeastern.jpg" alt="ชุดพื้นเมืองภาคอีสาน">
-                    </div>
-
-                    <div class="product-detail">
-
-                        <span>ชุดพื้นเมืองอีสาน</span>
-
-                        <strong>฿1,490</strong>
-
-                        <div class="product-bottom">
-
-                            <a href="products.html" class="btn-buy">
-                                ซื้อเลย
-                            </a>
-
-                            <a href="products.html" class="btn-prodcut-detail">
-                                รายละเอียด
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-
-                    <span class="text-title">ภาคกลาง</span>
-
-                    <div class="card-img">
-                        <img src="img/central.jpg" alt="ชุดพื้นเมืองภาคกลาง">
-                    </div>
-
-                    <div class="product-detail">
-
-                        <span>ชุดพื้นเมืองภาคกลาง</span>
-
-                        <strong>฿1,390</strong>
-
-                        <div class="product-bottom">
-
-                            <a href="products.html" class="btn-buy">
-                                ซื้อเลย
-                            </a>
-
-                            <a href="products.html" class="btn-prodcut-detail">
-                                รายละเอียด
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-
-                    <span class="text-title">ภาคใต้</span>
-
-                    <div class="card-img">
-                        <img src="img/southern.jpg" alt="ชุดพื้นเมืองภาคใต้">
-                    </div>
-
-                    <div class="product-detail">
-
-                        <span>ชุดพื้นเมืองภาคใต้</span>
-
-                        <strong>฿1,590</strong>
-
-                        <div class="product-bottom">
-
-                            <a href="products.html" class="btn-buy">
-                                ซื้อเลย
-                            </a>
-
-                            <a href="products.html" class="btn-prodcut-detail">
-                                รายละเอียด
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                <img src="/img/all.png" alt="">
             </div>
         </section>
-        <div class="link-products-bottom">
-            <a href="prodcuts.html">ดูเพิ่มเติม <i class="fa-solid fa-arrow-right"></i> </a>
-        </div>
+        <section class="textiles-container">
+            <div class="textiles-content">
+                <p>มรดกแห่งภูมิปัญญาไทย</p>
+                <h2>เสน่ห์แห่งการแต่งกายพื้นเมืองไทย</h2>
+                <span>เรียนรู้เรื่องร่าว ผืนผ้าและอัตลักษณ์ชองผู้คนจากทั้ง 4 ภาค</span>
+            </div>
+            <div class="btn-detail">
+                <input type="submit" value="สำรวจชุดพื้นเมือง">
+            </div>
+        </section>
 
+        <section class="regions">
+            <h1>ชุดทั้ง 4 ภาค</h1>
+
+
+            
+        </section>
     </main>
-
-    <footer class="footer" id="contact">
-
-        <div class="footer-container">
-
-            <div class="footer-brand">
-
-                <a href="#home" class="footer-logo">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-
-                <p>
-                    เรียนรู้เรื่องราวการแต่งกายพื้นเมืองของอีสาน
-                    ผ่านผ้าไทย ภูมิปัญญา และวัฒนธรรม
-                    ที่สืบทอดจากรุ่นสู่รุ่น
-                </p>
-
-            </div>
-
-            <div class="footer-links">
-
-                <h3>เมนู</h3>
-
-                <a href="#home">หน้าหลัก</a>
-                <a href="#products">สินค้าทั้งหมด</a>
-                <a href="#payment">ชำระเงิน</a>
-                <a href="#textTure">แกลเลอรี่ภาพ</a>
-                <a href="#lesson">แหล่งเรียนรู้/บทความ</a>
-
-            </div>
-
-            <div class="footer-links">
-
-                <h3>เกี่ยวกับเว็บไซต์</h3>
-
-                <a href="#about">เกี่ยวกับเรา</a>
-                <a href="#clothing">การแต่งกายพื้นเมือง</a>
-                <a href="#lesson">บทความ</a>
-
-            </div>
-
-            <div class="footer-social">
-
-                <h3>ติดตามเรา</h3>
-
-                <div class="social-icons">
-
-                    <a href="https://web.facebook.com/potaei" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" aria-label="TikTok">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 การแต่งกายพื้นเมืองของอีสาน
-                | All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
