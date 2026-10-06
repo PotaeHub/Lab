@@ -144,11 +144,23 @@ a:hover:not(.nav-button, .btn-view-detail, .facebook) {
 .regions {
     width: 100%;
     background: #ffffff;
-    margin-bottom: 40px ;
 }
 
 .regions h1 {
+    padding: 20px;
     text-align: center;
+}
+
+.text-regions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+
+}
+
+.text-regions>p {
+    font-size: 30px;
 }
 
 .card-container {
@@ -169,6 +181,7 @@ a:hover:not(.nav-button, .btn-view-detail, .facebook) {
     border: 1px solid #000000;
     border-radius: 15px;
     padding: 20px;
+    margin: 40px 20px;
 }
 
 .card-imgae {
@@ -196,13 +209,21 @@ a:hover:not(.nav-button, .btn-view-detail, .facebook) {
     border-radius: 8px;
     color: var(--gold);
     padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-view-detail:hover {
+    border: 1px solid #194469;
+    background-color: #fffffe;
+    transform: translateY(-5px);
+    color: black;
+    box-shadow: 0px 5px 10px  var(--brown);
 }
 
 footer {
     padding: 20px;
     text-align: center;
-    background-color: #194469af;
-    margin-top: 20px;
+    background-color: var(--navy);
 }
 
 footer>h1 {
@@ -210,8 +231,8 @@ footer>h1 {
 }
 
 .facebook {
-    transition: 0.2s ease-in-out;
-    color: #030303;
+    transition: 0.3s ease-in-out;
+    color: #0c6cc5;
 }
 
 .facebook:hover {
