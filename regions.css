@@ -1,0 +1,75 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: Tahoma, sans-serif;
+     background: #f8f6f1;
+     color: #333;
+     line-height: 1.8;
+ }
+
+ .btn-link {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    margin: 20px 0px;
+ }
+
+ .btn-goTo-home {
+     color: #ffffff;
+     text-decoration: none;
+     border: 1px solid #194469;
+     background-color: #194469;
+     padding: 10px 20px;
+     border-radius: 10px;
+ }
+
+ .container {
+     position: relative;
+     max-width: 1200px;
+     margin: 50px auto;
+     padding: 0 20px;
+ }
+
+ .header {
+     text-align: center;
+     margin-bottom: 40px;
+ }
+
+ .header h1 {
+     font-size: 2.2rem;
+     color: #194469;
+     margin-bottom: 10px;
+ }
+
+ .header p {
+     max-width: 800px;
+     margin: auto;
+     color: #666;
+ }
+
+ .regions {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+ }
+
+ .region-card {
+     background: #fff;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     padding: 25px;
+ }
+
+ .region-card h3 {
+     color: #194469;
+     margin-bottom: 10px;
+ }
+
+ .region-card p {
+     color: #555;
+     text-align: justify;
+ }
